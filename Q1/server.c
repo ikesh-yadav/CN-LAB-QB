@@ -7,7 +7,7 @@ int main(){
 	struct sockaddr_in addr;
 	sock_fd=socket(AF_INET,SOCK_STREAM,0);
 	addr.sin_family=AF_INET;
-	addr.sin_addr.s_addr=inet_addr("127.0.0.1");//SHould be INET_ANY
+	addr.sin_addr.s_addr=INADDR_ANY;
 	addr.sin_port=htons(7891);
 	bind(sock_fd,(struct sockaddr *) &addr,sizeof(addr));
 	printf("Server Online");
