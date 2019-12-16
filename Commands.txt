@@ -1,0 +1,2 @@
+nmcli dev show|grep 'DNS'- to show local DNS server in linux distros
+ipconfig /all -to show local DNS server in windows
