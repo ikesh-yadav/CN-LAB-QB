@@ -25,9 +25,9 @@ int main(){
 	}
 	generate(a,b);
 	cout<<"Codeword:"<<b[0]<<b[1]<<b[2]<<b[3]<<b[4]<<b[5]<<b[6]<<endl;
-	cout<<"DO you want to insert error,enter position to insert error if not enter -1:";
+	cout<<"DO you want to insert error,enter position to insert error if not enter 0:";
 	cin>>pos;
-	if(pos>=0){
+	if(pos>0){
 		b[pos-1]=b[pos-1]?0:1;
 	}
 	n=check(b);

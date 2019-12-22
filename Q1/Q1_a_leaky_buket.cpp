@@ -19,18 +19,19 @@ int main(){
 				bufferFilled+=data;
 				cout<<"added to buffer\n";
 			}
-			if(bufferFilled>0){
-				if(bufferFilled<outputRate){
-					cout<<"Sent "<<bufferFilled<<" no. of packets\n";
-					bufferFilled=0;
-				}else{
-					cout<<"Send "<<outputRate<<" no. of packets\n";
-					bufferFilled-=outputRate;
-				}
-			}else{
-				cout<<"no data to send\n";
-			}
 		}
+		if(bufferFilled>0){
+			if(bufferFilled<outputRate){
+				cout<<"Sent "<<bufferFilled<<" no. of packets\n";
+				bufferFilled=0;
+			}else{
+				cout<<"Send "<<outputRate<<" no. of packets\n";
+				bufferFilled-=outputRate;
+			}
+		}else{
+			cout<<"no data to send\n";
+		}
+		
 
 	}
 }

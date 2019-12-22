@@ -42,6 +42,7 @@ int main(){
         for(int j=0;j<18;j++) cout<<"-";cout<<endl;
 
         temp+=modified_input[divisor.length()+i];
+	
         for(int j=0;j<18;j++) cout<<" ";
         for(int j=0;j<i+1;j++) cout<<" ";
         cout<<temp<<endl;
