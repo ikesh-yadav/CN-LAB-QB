@@ -18,7 +18,7 @@ int check(int* b){
 }
 int main(){
 	int a[4],*b,n,pos;
-	b=new int[4];
+	b=new int[7];
 	cout<<"Enter data to send in digits:\n";
 	for(int i=0;i<4;i++){
 		cin>>a[3-i];
